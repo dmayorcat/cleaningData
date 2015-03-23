@@ -1,8 +1,10 @@
 Code Book for Course Project
 
+The following describes the variables and used Todal co describing the project files.
+
 Overview
 
-Source of the original data:
+1. Source of the original data:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 Full Description at the site where the data was obtained:
@@ -10,21 +12,21 @@ Full Description at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 Process
 
-The script run_analysis.R performs the following process to clean up the data and create tiny data sets:
+2.The script run_analysis.R performs the following process to clean up the data and create tiny data sets:
 
-Merge the training and test sets to create one data set.
+a.Merge the training and test sets to create one data set.
 
-Reads features.txt and uses only the measurements on the mean and standard deviation for each measurement.
+b. Reads features.txt and uses only the measurements on the mean and standard deviation for each measurement.
 
-Reads activity_labels.txt and applies human readable activity names to name the activities in the data set.
+c. Reads activity_labels.txt and applies human readable activity names to name the activities in the data set.
 
-Labels the data set with descriptive names. (Names are converted to lower case; underscores and brackets are removed.)
+d. Labels the data set with descriptive names. (Names are converted to lower case; underscores and brackets are removed.)
 
-Merges the features with activity labels and subject IDs. The result is saved as tidyData.txt.
+e. Merges the features with activity labels and subject IDs. The result is saved as tidyData.txt.
 
-The average of each measurement for each activity and each subject is merged to a second data set. The result is saved as tidyData2.txt.
+3. The average of each measurement for each activity and each subject is merged to a second data set. The result is saved as tidyData2.txt.
 
-Variables
+Variables used
 
 testData - table contents of test/X_test.txt
 trainData - table contents of train/X_train.txt
